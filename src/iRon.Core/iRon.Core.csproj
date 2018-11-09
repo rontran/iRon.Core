@@ -3,15 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>0.0.0.1</AssemblyVersion>
-    <FileVersion>0.0.0.1</FileVersion>
-    <Version>0.0.0.1-beta</Version>
+    <AssemblyVersion>0.0.0.2</AssemblyVersion>
+    <FileVersion>0.0.0.2</FileVersion>
+    <Version>0.0.0.2-beta</Version>
     <LangVersion>7.3</LangVersion>
     <PackageProjectUrl>https://github.com/rontran/iRon.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rontran/iRon.Core.git</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/rontran/iRon.Core/blob/master/LICENSE</PackageLicenseUrl>
     <Authors>Ron Tran</Authors>
     <Company>Tran</Company>
+    <Description>Interfaces for building standard applications</Description>
   </PropertyGroup>
 
 </Project>

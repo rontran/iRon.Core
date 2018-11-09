@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace iRon.Core.Interfaces
+﻿namespace iRon.Core.Interfaces
 {
-    public interface IChild<T, S> where S : Enum where T : struct
+    public interface IChild<ParentType> where ParentType : struct
     {
-        T Parent { get; set; }
+        ParentType Parent { get; set; }
     }
 }

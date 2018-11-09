@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace iRon.Core.Interfaces
+﻿namespace iRon.Core.Interfaces
 {
-    interface ILookup<T,S> where T:struct where S:Enum
+    interface ILookup
     {
         string Name { get; set; }
         string Code { get; set; }
