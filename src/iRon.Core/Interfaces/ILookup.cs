@@ -1,6 +1,6 @@
 ﻿namespace iRon.Core.Interfaces
 {
-    interface ILookup
+    public interface ILookup
     {
         string Name { get; set; }
         string Code { get; set; }
