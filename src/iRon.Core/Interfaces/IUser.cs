@@ -2,10 +2,10 @@
 
 namespace iRon.Core.Interfaces
 {
-    public interface IUser<UserStatusEnum> where UserStatusEnum : Enum
+    public interface IUser
     {
         string Name { get; set; }
         string Password { get; set; }
-        UserStatusEnum UserStatus { get; set; }
+        int Status { get; set; }
     }
 }

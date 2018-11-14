@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace iRon.Core.Interfaces
 {
-    public interface IRepository<Entity, IDType, ObjectStatusEnum> where IDType : struct where ObjectStatusEnum : Enum where Entity : IEntity<IDType, ObjectStatusEnum>
+    public interface IRepository<Entity,IdType> where IdType:struct where Entity : IEntity<IdType>
     {
         Task<IEnumerable<Entity>> GetAllAsync();
 
-        Task<Entity> FindFirstAsync(Expression<Func<Entity, bool>> where);
+        Task<Entity> FindFirstAsync(Expression<Func<Entity, bool>> where, string cacheSuffix = "");
 
         Task<int> CountAsync(Expression<Func<Entity, bool>> where);
 
@@ -19,11 +19,11 @@ namespace iRon.Core.Interfaces
 
         Task<Entity> SaveAsync(Entity entity);
 
-        Task<Entity> GetAsync(IDType id);
+        Task<Entity> GetAsync(string id);
 
         Task<bool> DeleteAsync(Entity entity);
 
-        Task<bool> DeleteAll();
+        Task<bool> DeleteAllAsync();
 
 
     }
